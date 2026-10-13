@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asseds/css/agrofit.css">
+    <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="asseds/css/reset.css">
+    <title>Agrofit</title>
+</head>
+
+<body class="editar__body">
+
+    <a href="rutinas.html">
+        <div class="rutina-hoy__volver-2">
+            <button type="button" class="rutina-volver-2__btn-add">
+                <i class="icon__volver fa-solid fa-arrow-left"></i> Volver
+            </button>
+        </div>
+        </a>
+
+    <div class="layout__editar-rutina">
+
+        <div class="editar__wrapper">
+            <header class="editar__header">
+                <h1 class="editar__titulo">Editar Rutina</h1>
+            </header>
+        </div>
+        <section class="editar__content">
+            <form action="home.html">
+                <div class="editar_inicio-nombre">
+                    <div class="editar__group">
+                        <input type="text" class="editar__input" name="name" placeholder="Fuerza Base" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo-rol" class="label_editar-title">Nivel</label>
+                        <select class="registro__select">
+                            <option value="intermedio">Intermedio</option>
+                            <option value="principiante">Principiante</option>
+                            <option value="avanzado">Avanzado</option>
+                        </select>
+                    </div>
+                </div>
+        </section>
+
+        <div class="editar__wrapper">
+            <header class="editar__header">
+                <h1 class="editar__titulo">Ejercicios</h1>
+            </header>
+        </div>
+        <section class="editar__content-1">
+
+             <div class="editar__borrar-icon">
+                <i class="editar__icon fa-solid fa-trash"></i>
+                </div>
+
+            <div class="editar__ejercicios">
+
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name" placeholder="Sentadilla Copa (Goblet Squat)" />
+                </div>
+
+
+                <div class="ejercicio__metricas">
+                    <div class="metrica__box">
+                        <label class="metrica__label">Series</label>
+                        <input type="number" class="metrica__input" value="4" min="1" />
+                    </div>
+
+                    <div class="metrica__box">
+                        <label class="metrica__label">Repeticiones</label>
+                        <input type="number" class="metrica__input" value="10" />
+                    </div>
+
+                    <div class="metrica__box">
+                        <label class="metrica__label">Descanso (s)</label>
+                        <input type="number" class="metrica__input" value="90" step="5" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="editar__ejercicios-2">
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name"
+                        placeholder="Mantener la mancuerna pegada al pecho, bajar controladamente abriendo las rodillas hacia afuera y subir apoyando bien los talones." />
+
+                </div>
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name" placeholder="Mancuerna o Pesas Rusas" />
+
+                </div>
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name"
+                        placeholder="[https://youtube.com/watch?v=ejemplo_goblet_squat]" />
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="editar__content-2">
+
+            <div class="editar__borrar-icon">
+                <i class="editar__icon fa-solid fa-trash"></i>
+                </div>
+
+            <div class="editar__ejercicios">
+
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name"
+                        placeholder="Zancadas con Mancuernas (Lunges)" />
+                </div>
+
+
+                <div class="ejercicio__metricas">
+                    <div class="metrica__box">
+                        <label class="metrica__label">Series</label>
+                        <input type="number" class="metrica__input" value="3" min="1" />
+                    </div>
+
+                    <div class="metrica__box">
+                        <label class="metrica__label">Repeticiones</label>
+                        <input type="number" class="metrica__input" value="10" />
+                    </div>
+
+                    <div class="metrica__box">
+                        <label class="metrica__label">Descanso (s)</label>
+                        <input type="number" class="metrica__input" value="60" step="5" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="editar__ejercicios-2">
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name"
+                        placeholder="Dar un paso largo hacia adelante, bajar la rodilla trasera hacia el suelo sin tocarlo y regresar a la posición inicial alternando piernas." />
+
+                </div>
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name" placeholder="Par de Mancuernas" />
+
+                </div>
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name"
+                        placeholder="https://youtube.com/watch?v=ejemplo_zancadas" />
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="editar__content-3">
+
+            <div class="editar__borrar-icon">
+                <i class="editar__icon fa-solid fa-trash"></i>
+                </div>
+
+            <div class="editar__ejercicios">
+
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name" placeholder="Flexiones de Pecho (Push-ups)" />
+                </div>
+
+
+                <div class="ejercicio__metricas">
+                    <div class="metrica__box">
+                        <label class="metrica__label">Series</label>
+                        <input type="number" class="metrica__input" value="3" min="1" />
+                    </div>
+
+                    <div class="metrica__box">
+                        <label class="metrica__label">Repeticiones</label>
+                        <input type="number" class="metrica__input" value="10" />
+                    </div>
+
+                    <div class="metrica__box">
+                        <label class="metrica__label">Descanso (s)</label>
+                        <input type="number" class="metrica__input" value="60" step="5" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="editar__ejercicios-2">
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name"
+                        placeholder="Mantener el cuerpo en plancha recta, bajar el pecho hasta casi tocar el suelo y empujar activando el abdomen." />
+
+                </div>
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name" placeholder="Peso Corporal / Colchoneta" />
+
+                </div>
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name"
+                        placeholder="https://youtube.com/watch?v=ejemplo_pushups" />
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="editar__content-4">
+
+            <div class="editar__borrar-icon">
+                <i class="editar__icon fa-solid fa-trash"></i>
+                </div>
+
+            <div class="editar__ejercicios">
+
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name" placeholder="Jalón al Pecho en Polea" />
+                </div>
+
+
+                <div class="ejercicio__metricas">
+                    <div class="metrica__box">
+                        <label class="metrica__label">Series</label>
+                        <input type="number" class="metrica__input" value="3" min="1" />
+                    </div>
+
+                    <div class="metrica__box">
+                        <label class="metrica__label">Repeticiones</label>
+                        <input type="number" class="metrica__input" value="12" />
+                    </div>
+
+                    <div class="metrica__box">
+                        <label class="metrica__label">Descanso (s)</label>
+                        <input type="number" class="metrica__input" value="60" step="5" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="editar__ejercicios-2">
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name"
+                        placeholder="Espalda ligeramente inclinada hacia atrás, traccionar la barra hacia la parte alta del pecho apretando los dorsales." />
+
+                </div>
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name" placeholder="Máquina de Polea Alta" />
+
+                </div>
+
+                <div class="editar__group">
+                    <input type="text" class="editar__input" name="name"
+                        placeholder="https://youtube.com/watch?v=ejemplo_jalon_pecho" />
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="editar__añadir">
+            <button type="button" class="btn__add-ejercicio">
+                <div class="btn__add-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <span class="btn__add-text">Añadir Ejercicio</span>
+            </button>
+        </section>
+
+        <a class="editar__boton-enlace" href="rutinas.html">
+            <button type="submit" class="btn__guardar-rutina">
+                <i class="fa-solid fa-floppy-disk"></i>
+                <span>Guardar Rutina</span>
+                <i class="fa-solid fa-chevron-right icon-arrow"></i>
+            </button>
+        </a>
+
+    </div>
+</body>
+
+</html>

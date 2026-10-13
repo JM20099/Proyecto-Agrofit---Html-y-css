@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asseds/css/agrofit.css">
+    <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="asseds/css/reset.css">
+    <link rel="stylesheet" href="asseds/css/responsive.css">
+    <title>Agrofit</title>
+</head>
+
+<body>
+    <div class="layout__inicio">
+        <aside class="home__aside">
+            <section class="home__container">
+                <nav class="layout__menu"> <!--menu de navegacion--> <!--nav sirve para colocar enlaces de navegacion-->
+                    <div class="home__icon-text">
+                        <img class="home__img" src="asseds/img/logo_2.png" alt="">
+                    </div>
+
+
+                    <input type="checkbox" id="menu-toggle" class="menu__checkbox">
+                <label for="menu-toggle" class="menu__btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+
+                    <ul class="menu__list"> <!--tabla informal-->
+                        <li class="menu__option  "> <!--datos de la tabla-->
+                            <a href="home.html" class="menu_link"> <!--crea conexiones-->
+                                <i class="menu__icon fa-solid fa-house"></i> <!--mostrar iconos-->
+                                <span class="menu__overlay">Inicio</span> <!--coloca texto al lado del icono-->
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="usuarios.html" class="menu_link menu__link--active">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Usuarios</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="rutinas.html" class="menu_link">
+                                <i class="menu__icon fa-solid fa-dumbbell fa-rotate-by"
+                                    style="--fa-rotate-angle: -45deg;"></i>
+                                <span class="menu__overlay">Rutinas</span>
+                            </a>
+                        </li>
+                        <li class="menu__option-cerrar">
+                            <a href="inicio_de_sesion.html" class="menu_link-cerrar">
+                                <i class="menu__icon fa-solid fa-right-from-bracket"></i>
+                                <span class="menu__overlay">Cerrar Sesión</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </section>
+        </aside>
+
+
+
+        <main class="home__content">
+
+
+            <section class="usuarios__inicio-inicio">
+                <h1 class="usuarios__titulo ">Control de Usuarios</h1>
+                <h2 class="usuarios__subtitle">Gestiona las rutinas, el progreso y la semana de adaptacion de los usuarios</h2>
+            </section>
+
+           
+
+            
+
+             
+             <section class="usuarios__iconos-enlaces">
+
+
+                <div class="usuarios__tarjeta-principal">
+                <article class="usuarios__rutina">
+                <a href="usuarios_rutina.html">
+                <div class="usuarios__rutina-icon usuarios__rutina-icon-r">
+                    <i class="usuarios__rutina-icon-icon fa-solid fa-list"></i>
+                </div>
+                </a>
+                <div class="usuarios__rutina-text">
+                    <h1 class="usuarios__rutina-text-text">Rutinas</h1>
+                </div>
+                <div class="usuarios__tarjeta-principal-text" >
+                    <p>Administra y asigna rutinas a los usuarios</p>
+                </div>
+                </article>
+                </div>
+
+
+                <div class="usuarios__tarjeta-principal">
+                <article class="usuarios__progreso">
+                <a href="progreso.html">
+                <div class="usuarios__rutina-icon usuarios__rutina-icon-p">
+                    <i class="usuarios__rutina-icon-icon usuarios__rutina-icon-icon-2 fa-solid fa-arrow-trend-up"></i>
+                </div>
+                </a>
+               <div class="usuarios__rutina-text">
+                    <h1 class="usuarios__rutina-text-text">Progreso</h1>
+                </div>
+                <div class="usuarios__tarjeta-principal-text" >
+                    <p>Administra el progreso de los usuarios</p>
+                </div>
+                </article>
+                </div>
+
+                <div class="usuarios__tarjeta-principal usuarios__tarjeta-principal-2">
+                <article class="usuarios__semana-de-adaptacion">
+                <a href="semana_de_adaptacion.html">
+                <div class="usuarios__rutina-icon usuarios__rutina-icon-sm">
+                    <i class="usuarios__rutina-icon-icon usuarios__rutina-icon-icon-3 fa-solid fa-battery-half"></i>
+                </div>
+                </a>
+                <div class="usuarios__rutina-text">
+                    <h1 class="usuarios__rutina-text-text">Semana de Adaptacion</h1>
+                </div>
+                <div class="usuarios__tarjeta-principal-text" >
+                    <p>Administra y asigna la semana de adaptacion de los aprendices</p>
+                </div>
+                </article>
+                </div>
+             </section>
+             
+     </main>
+</body>
+</html>

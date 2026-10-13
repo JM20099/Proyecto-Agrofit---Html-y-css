@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asseds/css/agrofit.css">
+    <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="asseds/css/reset.css">
+    <link rel="stylesheet" href="asseds/css/responsive.css">
+    <title>Agrofit</title>
+</head>
+<body>
+    <div class="layout__inicio">
+        <aside class="home__aside">
+            <section class="home__container">
+                <nav class="layout__menu"> <!--menu de navegacion--> <!--nav sirve para colocar enlaces de navegacion-->
+                    <div class="home__icon-text">
+                        <img class="home__img" src="asseds/img/logo_2.png" alt="">
+                    </div>
+
+
+                    <input type="checkbox" id="menu-toggle" class="menu__checkbox">
+                <label for="menu-toggle" class="menu__btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                    
+                    <ul class="menu__list"> <!--tabla informal-->
+                        <li class="menu__option  "> <!--datos de la tabla-->
+                            <a href="home.html" class="menu_link"> <!--crea conexiones-->
+                                <i class="menu__icon fa-solid fa-house"></i> <!--mostrar iconos-->
+                                <span class="menu__overlay">Inicio</span> <!--coloca texto al lado del icono-->
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="usuarios.html" class="menu_link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Usuarios</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="rutinas.html" class="menu_link menu__link--active">
+                                <i class="menu__icon fa-solid fa-dumbbell fa-rotate-by" style="--fa-rotate-angle: -45deg;"></i>
+                                <span class="menu__overlay">Rutinas</span>
+                            </a>
+                        </li>
+                        <li class="menu__option-cerrar">
+                            <a href="inicio_de_sesion.html" class="menu_link-cerrar">
+                                <i class="menu__icon fa-solid fa-right-from-bracket"></i>
+                                <span class="menu__overlay">Cerrar Sesión</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </section>
+        </aside>
+
+
+        <main class="home__content">
+
+            
+            <header class="catalogo__header">
+                <h1 class="catalogo__titulo">Catálogo de Rutinas</h1>
+                
+                <div class="catalogo__acciones">
+                    <a href="crear_rutinas.html" class="catalogo__btn-nueva">
+                        <i class="fa-solid fa-circle-plus"></i> NUEVA RUTINA
+                    </a>
+                </div>
+            </header>
+
+            <div class="rutinas__group">
+                <input type="email" class="rutinas__input" name="name" required placeholder=" "/>    <!-- crear campos interactivos dentro de un formulario-->     <!--required obliga al usuario a llenar el campo y placeholder muestra un texto dentro de la tabla vacia-->
+                <label for="name" class="rutinas__label">Buscar Rutina</label> 
+             <div class="rutinas_icon-icon">
+                    <i class="rutinas_icon fa solid fa-magnifying-glass"></i>
+             </div>
+             </div>
+
+            <!-- Grilla de Tarjetas -->
+            <section class="catalogo__grid">
+
+                <!-- Tarjeta 1 -->
+                <article class="rutina-card">
+                    <div class="rutina-card__header">
+                        <h3 class="rutina-card__titulo">Fuerza Base</h3>
+                        <span class="rutina-card__badge">Intermedio</span>
+                    </div>
+                    <p class="rutina-card__descripcion">
+                        Rutina introductoria para el desarrollo de fuerza fundamental utilizando el peso corporal y cargas ligeras. Ideal para adaptación anatómica.
+                    </p>
+                    <div class="rutina-card__footer">
+                        <div class="rutina-card__meta">
+                            <span class="rutinas__numero-ejercicios"><i class="fa-solid fa-arrows-left-right"></i> 4 Ejercicios</span>
+                        </div>
+                        <a href="editar_rutina.html" class="rutina-card__btn-editar">
+                            <i class="fa-solid fa-pen"></i> EDITAR
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="rutina-card">
+                    <div class="rutina-card__header">
+                        <h3 class="rutina-card__titulo">Hipertrofia Tren Superior</h3>
+                        <span class="rutina-card__badge">Principiante</span>
+                    </div>
+                    <p class="rutina-card__descripcion">
+                        Enfoque en desarrollo muscular del torso, espalda y brazos. Volumen de entrenamiento moderado a alto.
+                    </p>
+                    <div class="rutina-card__footer">
+                        <div class="rutina-card__meta">
+                            <span class="rutinas__numero-ejercicios"><i class="fa-solid fa-arrows-left-right"></i> 8 Ejercicios</span>
+                        </div>
+                        <a href="editar_rutina.html" class="rutina-card__btn-editar">
+                            <i class="fa-solid fa-pen"></i> EDITAR
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="rutina-card rutina-card--azul">
+                    <div class="rutina-card__header">
+                        <h3 class="rutina-card__titulo">Resistencia Aeróbica</h3>
+                        <span class="rutina-card__badge">Avanzado</span>
+                    </div>
+                    <p class="rutina-card__descripcion">
+                        Circuito de alta intensidad diseñado para maximizar el consumo de oxígeno y la resistencia muscular prolongada.
+                    </p>
+                    <div class="rutina-card__footer">
+                        <div class="rutina-card__meta">
+                            <span class="rutinas__numero-ejercicios"><i class="fa-solid fa-arrows-left-right"></i> 12 Ejercicios</span>
+                        </div>
+                        <a href="editar_rutina.html" class="rutina-card__btn-editar rutina-card__btn-editar--azul">
+                            <i class="fa-solid fa-pen"></i> EDITAR
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 4 -->
+                <article class="rutina-card">
+                    <div class="rutina-card__header">
+                        <h3 class="rutina-card__titulo">Movilidad Dinámica</h3>
+                        <span class="rutina-card__badge rutina-card__badge--verde">Intermedio</span>
+                    </div>
+                    <p class="rutina-card__descripcion">
+                        Secuencia fluida para mejorar rangos articulares y flexibilidad general. Excelente como recuperación activa.
+                    </p>
+                    <div class="rutina-card__footer">
+                        <div class="rutina-card__meta">
+                            <span class="rutinas__numero-ejercicios"><i class="fa-solid fa-arrows-left-right"></i> 10 Ejercicios</span>
+                        </div>
+                        <a href="editar_rutina.html" class="rutina-card__btn-editar">
+                            <i class="fa-solid fa-pen"></i> EDITAR
+                        </a>
+                    </div>
+                </article>
+
+            </section>
+
+            
+
+        </main>
+        </div>
+</body>
+</html>

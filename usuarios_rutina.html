@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asseds/css/agrofit.css">
+    <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="asseds/css/reset.css">
+    <link rel="stylesheet" href="asseds/css/responsive.css">
+    <title>Agrofit</title>
+</head>
+
+<body>
+
+
+    
+
+
+    <div class="layout__inicio">
+        <aside class="home__aside">
+            <section class="home__container">
+                <nav class="layout__menu"> <!--menu de navegacion--> <!--nav sirve para colocar enlaces de navegacion-->
+                    <div class="home__icon-text">
+                        <img class="home__img" src="asseds/img/logo_2.png" alt="">
+                    </div>
+
+
+                    <input type="checkbox" id="menu-toggle" class="menu__checkbox">
+                <label for="menu-toggle" class="menu__btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+
+                    <ul class="menu__list"> <!--tabla informal-->
+                        <li class="menu__option  "> <!--datos de la tabla-->
+                            <a href="home.html" class="menu_link"> <!--crea conexiones-->
+                                <i class="menu__icon fa-solid fa-house"></i> <!--mostrar iconos-->
+                                <span class="menu__overlay">Inicio</span> <!--coloca texto al lado del icono-->
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="usuarios.html" class="menu_link menu__link--active">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Usuarios</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="rutinas.html" class="menu_link">
+                                <i class="menu__icon fa-solid fa-dumbbell fa-rotate-by"
+                                    style="--fa-rotate-angle: -45deg;"></i>
+                                <span class="menu__overlay">Rutinas</span>
+                            </a>
+                        </li>
+                        <li class="menu__option-cerrar">
+                            <a href="inicio_de_sesion.html" class="menu_link-cerrar">
+                                <i class="menu__icon fa-solid fa-right-from-bracket"></i>
+                                <span class="menu__overlay">Cerrar Sesión</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </section>
+        </aside>
+
+
+
+        <main class="home__content">
+
+            <a href="usuarios.html">
+        <div class="rutina-hoy__volver-4">
+            <button type="button" class="rutina-volver-4__btn-add">
+                <i class="icon__volver fa-solid fa-arrow-left"></i> Volver
+            </button>
+        </div>
+        </a>
+
+
+            <section class="usuarios__inicio">
+                <h1 class="usuarios__titulo-rutina">Control de Rutinas</h1>
+                <h2 class="usuarios__subtitle-rutina">Gestiona rutinas de usuarios</h2>
+            </section>
+
+            <div class="usuarios__group">
+                <input type="email" class="usuarios__input" name="name" required placeholder=" "/>    <!-- crear campos interactivos dentro de un formulario-->     <!--required obliga al usuario a llenar el campo y placeholder muestra un texto dentro de la tabla vacia-->
+                <label for="name" class="usuarios__label">Buscar por nombre, ficha o dependencia</label> 
+             <div class="usuarios_icon-icon">
+                    <i class="usuarios_icon fa solid fa-magnifying-glass"></i>
+             </div>
+             </div>
+
+ 
+             <section class="home__actividad">
+        
+                
+  <a href="asignar__rutina.html" class="usuarios__lista usuarios__tarjeta-link">
+    
+    <div class="usuarios__tarjeta">
+      <div class="usuarios__info-usuario">
+        <div class="usuarios__avatar">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="usuarios__detalles">
+          <h3 class="usuarios__nombre">Carlos Mendoza</h3>
+          <p class="usuarios__estado estado--completado">
+            ficha: 3560892
+            </p>
+            <p class="usuarios__estado estado--completado">
+            peso: 72 Kg
+            </p>
+            <p class="usuarios__estado estado--completado">
+            Masa Corporal: 23.4
+            </p>
+        </div>
+      </div>
+      <span class="usuarios__tiempo usuarios__tiempo-activa">Sin Asignar</span>
+    </div>
+    </a>
+
+
+    <a href="rutina_asignada-info.html" class="usuarios__lista usuarios__tarjeta-link">
+    <div class="usuarios__tarjeta">
+      <div class="usuarios__info-usuario">
+        <div class="usuarios__avatar">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="usuarios__detalles">
+          <h3 class="usuarios__nombre">Ana silva</h3>
+          <p class="usuarios__estado estado--completado">
+            Dependencia: Instructora
+            </p>
+            <p class="usuarios__estado estado--completado">
+            peso: 70 Kg
+            </p>
+            <p class="usuarios__estado estado--completado">
+            Masa Corporal: 20.4
+            </p>
+        </div>
+      </div>
+      <span class="usuarios__tiempo usuarios__tiempo-activa">Activa</span>
+    </div>
+    </a>
+
+
+   
+
+
+
+    </section>
+
+     </main>
+   </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asseds/css/agrofit.css">
+    <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+    <title>Agrofit</title>
+</head>
+
+<body class="progreso__body">
+
+    <a href="progreso.html">
+        <div class="rutina-hoy__volver">
+            <button type="button" class="rutina-volver__btn-add">
+                <i class="icon__volver fa-solid fa-arrow-left"></i> Volver
+            </button>
+        </div>
+        </a>
+
+    <div class="progreso__layout">
+        <div class="progreso_text">
+
+            <div class="progreso__header">
+                <h1 class="progreso__titulo-registrar">Progreso</h1>
+                <p class="progreso__subtitulo-registrar">
+                    Registra las nuevas metricas para actualizar el perfil
+                </p>
+            </div>
+            <section class="progreso_content">
+                <div class="progreso_title-contenedor">
+                    <h1 class="progreso_title">Nuevas Metricas</h1>
+                </div>
+
+                <form action="recuperar_progreso-4.html">
+                    <div class="progreso__text-peso">
+                        <div class="link__group-progreso">
+                            <input type="text" class="link__input-progreso" name="name" required placeholder=" " />
+                            <label for="name" class="form__label-progreso">Peso Corporal (kg)</label>
+                            <div class="link_icon-icon-progreso">
+                                <i class="link_icon-progreso  fa solid fa-chart-line"></i>
+                            </div>
+                        </div>
+
+                        <div class="link__group-progreso">
+                            <input type="text" class="link__input-progreso" name="name" required placeholder=" " />
+                            <label for="name" class="form__label-progreso">Grasa Corporal</label>
+                            <div class="link_icon-icon-progreso">
+                                <i class="link_icon-progreso fa solid fa-droplet "></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progreso__text-nota"></div>
+                    <div class="link__group-progreso-2">
+                        <textarea type="text" class="link__input-progreso-2" name="name" required
+                            placeholder=" "></textarea>
+                        <label for="message" class="form__label-progreso-2">Notas de Desempeño</label>
+                    </div>
+
+            </section>
+            <button type="submit" class="codigo__progreso-3">Actualizar progreso
+            <i class="icon_button-progreso fa solid fa-chevron-right"></i>
+            </button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

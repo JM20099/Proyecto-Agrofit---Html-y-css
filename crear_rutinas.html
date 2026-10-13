@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asseds/css/agrofit.css">
+    <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="asseds/css/reset.css">
+    <title>Agrofit</title>
+</head>
+<body class="editar__body">
+
+  <a href="rutinas.html">
+        <div class="rutina-hoy__volver-2">
+            <button type="button" class="rutina-volver-2__btn-add">
+                <i class="icon__volver fa-solid fa-arrow-left"></i> Volver
+            </button>
+        </div>
+        </a>
+
+<div class="layout__editar-rutina">
+
+    <div class="editar__wrapper">
+    <header class="editar__header">
+                <h1 class="editar__titulo">Crear Rutina</h1>
+            </header>
+    </div>
+            <section class="editar__content">
+      
+      <div class="editar_inicio-nombre">
+      <div class="editar__group">
+        <input type="text" class="editar__input" name="name" required placeholder=" " />    
+        <label for="name" class="editar__label">Nombre de la Rutina</label>
+      </div>
+
+      <div class="form-group">
+    <label for="tipo-rol" class="label_editar-title">Nivel</label>
+    <select class="registro__select">
+        <option class="editar__option" value="" disabled selected>Selecciona un Nivel</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="principiante">Principiante</option>
+        <option value="avanzado">Avanzado</option>
+    </select>
+</div>
+</div>
+</section>
+
+<div class="editar__wrapper">
+<header class="editar__header">
+                <h1 class="editar__titulo">Constructor de Ejercicios</h1>
+            </header>
+</div>
+            <section class="editar__content">
+  <form action="home.html">
+    <div class="editar__ejercicios">
+      
+      <!-- Nombre del Ejercicio -->
+      <div class="editar__group">
+        <input type="text" class="editar__input" name="name" required placeholder=" " />    
+        <label for="name" class="editar__label">Nombre del Ejercicio</label>
+      </div>
+
+      <!-- Métricas a la derecha -->
+      <div class="ejercicio__metricas">
+        <div class="metrica__box">
+          <label class="metrica__label">Series</label>
+          <input type="number" class="metrica__input" value="0"/>
+        </div>
+
+        <div class="metrica__box">
+          <label class="metrica__label">Repeticiones</label>
+          <input type="number" class="metrica__input" value="0"/>
+        </div>
+
+        <div class="metrica__box">
+          <label class="metrica__label">Descanso (s)</label>
+          <input type="number" class="metrica__input" value="0"/>
+        </div>
+      </div>
+      </div>
+
+      <div class="editar__ejercicios-2">
+        <div class="editar__group">
+        <input type="text" class="editar__input" name="name" required placeholder=" " />    
+        <label for="name" class="editar__label">Descripcion</label>
+      </div>
+
+      <div class="editar__group">
+        <input type="text" class="editar__input" name="name" required placeholder=" " />    
+        <label for="name" class="editar__label">Maquina</label>
+      </div>
+
+      <div class="editar__group">
+        <input type="text" class="editar__input" name="name" required placeholder=" " />    
+        <label for="name" class="editar__label">Video Tutorial (Link)</label>
+      </div>
+      </div>
+
+    
+
+</section>
+      
+
+
+<section class="editar__añadir">
+    <button type="button" class="btn__add-ejercicio">
+  <div class="btn__add-icon">
+    <i class="fa-solid fa-plus"></i>
+  </div>
+  <span class="btn__add-text">Añadir Ejercicio</span>
+</button>
+</section>
+
+<a class="editar__boton-enlace" href="rutinas.html">
+<button type="submit" class="btn__guardar-rutina">
+  <i class="fa-solid fa-floppy-disk"></i>
+  <span>Guardar Rutina</span>
+  <i class="fa-solid fa-chevron-right icon-arrow"></i>
+</button>
+</a>
+
+</div>
+</body>
+</html>

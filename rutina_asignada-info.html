@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asseds/css/agrofit.css">
+    <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="asseds/css/reset.css">
+    <title>Rutina de Hoy - Agrofit</title>
+</head>
+<body class="rutina-hoy__body">
+
+     <a href="usuarios.html">
+        <div class="rutina-hoy__volver-2">
+            <button type="button" class="rutina-volver-2__btn-add">
+                <i class="icon__volver fa-solid fa-arrow-left"></i> Volver
+            </button>
+        </div>
+        </a>
+        
+    <main class="rutina-hoy__card">
+        
+        <!-- Header Principal -->
+        <header class="rutina-hoy__header">
+            <h1 class="rutina-hoy__titulo">Rutina Asignada</h1>
+            
+        </header>
+
+        <!-- Bloque Rutina Actual -->
+        <section class="rutina-hoy__actual">
+            <div class="rutina-hoy__actual-header">
+                <h2 class="rutina-hoy__actual-nombre">Fuerza Tren Superior</h2>
+                <i class="fa-solid fa-square-poll-vertical rutina-hoy__actual-icon"></i>
+
+                <div class="rutina__eliminar">
+                <i class="rutina__eliminar-icon fa-solid fa-trash"></i>
+                </div>
+
+            </div>
+            <span class="rutina-hoy__actual-meta">Dias Asignados: 30</span>
+            <span class="rutina-hoy__actual-meta">Dias Completados: 20</span>
+        </section>
+
+
+        <!-- Lista de Ejercicios Asignados -->
+        <section class="rutina-hoy__ejercicios">
+            <h3 class="rutina-hoy__seccion-titulo">
+                <i class="fa-regular fa-calendar-check"></i> Ejercicios Asignados
+            </h3>
+
+            <div class="rutina-hoy__grid">
+                
+                <!-- Tarjeta Ejercicio 1 (Borde Verde) -->
+                <article class="ejercicio__card">
+                    <h4 class="ejercicio__nombre">Press de Banca</h4>
+                    <span class="ejercicio__grupo">Pecho y Tríceps</span>
+                    <div class="ejercicio__detalles">
+                        <div class="ejercicio__box">
+                            <span class="ejercicio__label">SERIES</span>
+                            <span class="ejercicio__valor">4</span>
+                        </div>
+                        <div class="ejercicio__box">
+                            <span class="ejercicio__label">REPS</span>
+                            <span class="ejercicio__valor">8-10</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta Ejercicio 2 (Borde Verde) -->
+                <article class="ejercicio__card">
+                    <h4 class="ejercicio__nombre">Remo con Barra</h4>
+                    <span class="ejercicio__grupo">Espalda</span>
+                    <div class="ejercicio__detalles">
+                        <div class="ejercicio__box">
+                            <span class="ejercicio__label">SERIES</span>
+                            <span class="ejercicio__valor">3</span>
+                        </div>
+                        <div class="ejercicio__box">
+                            <span class="ejercicio__label">REPS</span>
+                            <span class="ejercicio__valor">10-12</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta Ejercicio 3 (Estándar) -->
+                <article class="ejercicio__card">
+                    <div class="ejercicio__header">
+                        <h4 class="ejercicio__nombre">Press Militar</h4>
+                        <i class="fa-regular fa-clock ejercicio__icon"></i>
+                    </div>
+                    <span class="ejercicio__grupo">Hombros</span>
+                    <div class="ejercicio__detalles">
+                        <div class="ejercicio__box">
+                            <span class="ejercicio__label">SERIES</span>
+                            <span class="ejercicio__valor">3</span>
+                        </div>
+                        <div class="ejercicio__box">
+                            <span class="ejercicio__label">REPS</span>
+                            <span class="ejercicio__valor">12</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Botón de Acción -->
+         <a href="asignar__rutina.html">
+        <div class="rutina-hoy__acciones">
+            <button type="button" class="rutina-hoy__btn-add">
+                <i class="fa-solid fa-circle-plus"></i> Añadir Nueva Rutina
+            </button>
+        </div>
+        </a>
+    </main>
+
+</body>
+</html>

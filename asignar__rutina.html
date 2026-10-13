@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asseds/css/agrofit.css">
+    <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="asseds/css/reset.css">
+    <title>Agrofit</title>
+</head>
+<body>
+
+      <a href="usuarios_rutina.html">
+        <div class="rutina-hoy__volver-3">
+            <button type="button" class="rutina-volver-3__btn-add">
+                <i class="icon__volver fa-solid fa-arrow-left"></i> Volver
+            </button>
+        </div>
+        </a>
+
+    <div class="layout__asignar.rutinas">
+        <section class="asignar__inicio">
+                <h1 class="asignar__titulo">Asignar Rutina</h1>
+                <h2 class="asignar__subtitle">Selecciona una rutina para personalizar el entrenamiento de Carlos Mendoza</h2>
+            </section>
+
+
+            <div class="asignar__group">
+                <input type="email" class="asignar__input" name="name" required placeholder=" "/>    <!-- crear campos interactivos dentro de un formulario-->     <!--required obliga al usuario a llenar el campo y placeholder muestra un texto dentro de la tabla vacia-->
+                <label for="name" class="asignar__label">Buscar Rutina</label> 
+             <div class="asignar_icon-icon">
+                    <i class="asignar_icon fa solid fa-magnifying-glass"></i>
+             </div>
+             </div>
+
+
+             <section class="asignar__contenedor-rutinas">
+            
+            <!-- Tarjeta 1 (Envuelta en enlace a detalle_rutina.html) -->
+            <a href="configuracion_rutina.html" class="rutina__card-link">
+                <article class="rutina__card">
+                    <div class="rutina__image-wrapper">
+                        <img src="asseds/img/gym.png" alt="Fuerza Base" class="rutina__img">
+                    </div>
+                    <div class="rutina__body">
+                        <h3 class="rutina__nombre">Fuerza Base</h3>
+                        <p class="rutina__descripcion">Programa enfocado en la construcción de fuerza funcional y levantamientos compuestos.</p>
+                        <div class="rutina__meta">
+                            <span><i class="fa-solid fa-chart-simple"></i> Nivel: Medio</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Tarjeta 2 -->
+            <a href="configuracion_rutina.html" class="rutina__card-link">
+                <article class="rutina__card">
+                    <div class="rutina__image-wrapper">
+                        <img src="asseds/img/gym.png" alt="Hipertrofia" class="rutina__img">
+                    </div>
+                    <div class="rutina__body">
+                        <h3 class="rutina__nombre">Hipertrofia</h3>
+                        <p class="rutina__descripcion">Maximiza el crecimiento muscular con volumen controlado y aislamiento estratégico.</p>
+                        <div class="rutina__meta">
+                            <span><i class="fa-solid fa-chart-simple"></i> Nivel: Alto</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Tarjeta 3 -->
+            <a href="configuracion_rutina.html" class="rutina__card-link">
+                <article class="rutina__card">
+                    <div class="rutina__image-wrapper">
+                        <img src="asseds/img/gym.png" alt="Resistencia Cardio" class="rutina__img">
+                    </div>
+                    <div class="rutina__body">
+                        <h3 class="rutina__nombre">Resistencia Cardio</h3>
+                        <p class="rutina__descripcion">Mejora la capacidad cardiovascular con intervalos de alta intensidad y trabajo constante.</p>
+                        <div class="rutina__meta">
+                            <span><i class="fa-solid fa-chart-simple"></i> Nivel: Principiante</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,693 @@
+:root {
+    /* --- Marca / Colores Principales --- */
+    --color-primary: #191646;                 /* Verde principal (Botones / Selección) */
+    --color-primary-hover: #39A900;           /* Verde oscuro (Títulos / Iconos verdes) */
+    --color-primary-soft: #dcfce7;            /* Verde claro (Fondos suaves / Activos) */
+
+    --color-secondary: #0d3b66;               /* Azul oscuro (Títulos principales) */
+    --color-secondary-dark: #39A900;          /* Azul marino profundo (Fondo de Menú) */
+
+    /* --- Neutrales / Texto --- */
+    --color-title: #222222;                   /* Texto principal / Títulos oscuros */
+    --color-text: #555555;                    /* Texto general de párrafos */
+    --color-muted: gray;                      /* Texto secundario / Inputs / Iconos */
+    --color-icon: #e0e1e6;                    /* Iconos de menú inactivos */
+
+    /* --- Fondos y Superficies --- */
+    --color-bg-main: #F4F4F5;                 /* Fondo principal de la app */
+    --color-bg-content: rgb(243, 241, 241);    /* Fondo claro secundario */
+    --color-bg-card: #ffffff;                 /* Fondo de tarjetas / Modales */
+    --color-transparent: transparent;
+
+    /* --- Bordes --- */
+    --color-border: #d1d5db;                  /* Bordes generales de inputs y tarjetas */
+    --color-border-light: #f0f0f0;            /* Bordes divisores suaves */
+
+    /* --- Estados y Especiales --- */
+    --color-danger: red;                      /* Acciones destructivas / Cerrar sesión */
+    --color-success-glow: rgba(46, 164, 0, 0.35); /* Glow / Sombra verde */
+}
+
+
+
+
+body{
+    width: 100%;   
+    height: 100%;     
+    font-family: "poppins", Arial, Helvetica, sans-serif;     
+    font-size: 0.9rem;
+    background-color: var(--color-bg-main);
+    color: var(--color-text);     
+    overflow: hidden;  
+}
+
+
+
+
+
+
+.layout__inicio{
+    position: relative;  
+    width: 100%;
+    height: 100%;
+    display: grid;   
+    grid-template-areas:   
+            "aside content";   
+    grid-template-columns: 18% 82%;
+    min-height: 100vh;                                 
+} 
+
+
+
+
+.home__aside{
+    grid-area: aside;
+    width: 100%;
+}
+
+.home__content{
+    grid-area: content;
+    background-color: var(--color-bg-main);
+    width: 100%;
+    max-width: calc(100% - 5rem);
+    overflow-y: auto; 
+    height: 100vh;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+
+.home__container{
+    width: 100%;         
+    height: 100%;
+    background-color: var(--color-secondary-dark);
+    border: none;;               
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.menu__checkbox,
+.menu__btn {
+    display: none;
+}
+
+.menu__list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1rem 0;
+    margin-left: 2.5rem;
+    list-style: none;
+    margin-top: -5rem;
+}
+
+.menu__option-cerrar{
+    width: 80%;
+    padding-top: 20rem;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.menu__option {
+    display: block;
+    width: 80%;
+    transition: all 300ms ease-in-out;
+}
+
+.menu_link{
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1.2rem; /* Crea el espacio verde alrededor de la palabra e icono */
+    width: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+}
+
+/* --- ESTADO ACTIVO Y HOVER --- */
+
+/* 1. Fondo verde y texto blanco para el elemento activo (.menu__link--active) */
+/* 1. Elemento activo */
+.menu_link.menu__link--active {
+    height: 100%;
+    background-color: var(--color-primary);
+    border-radius: 7px;
+}
+
+.menu_link.menu__link--active .menu__icon,
+.menu_link.menu__link--active .menu__overlay {
+    color: #FFFFFF;
+}
+
+/* 2. Efecto hover para el resto de elementos */
+.menu_link:hover {
+    background-color: var(--color-primary);
+    border-radius: 7px;
+}
+
+.menu_link:hover .menu__icon,
+.menu_link:hover .menu__overlay {
+    color: #FFFFFF;
+}
+
+.menu_link-cerrar:hover .menu__overlay,
+.menu_link-cerrar:hover .menu__icon{
+    color: var(--color-danger); 
+}
+
+.home__icon-text{
+    position: relative;
+    width: 65%;
+    padding: 2rem 0;
+    padding-left: 2.3rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.home__img{
+    width: 110%;
+    font-size: 1.9rem;
+    padding-top: 3rem;
+    display: block;
+    margin: 0 auto;
+    padding-top: -7rem;
+    padding-bottom: 5rem;
+}
+
+.menu__overlay{
+    font-size: 1.2rem;
+    color: var(--color-icon);
+}
+
+.menu__icon{
+    font-size: 1.2rem;
+    color: var(--color-icon);
+    margin-right: 1rem;
+}
+
+.menu_link{
+    text-decoration: none;
+}
+
+
+
+.rutina__body {
+    background-color: var(--color-bg-main);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 2rem;
+}
+
+.rutina__container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+.rutina__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.rutina__subtitulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary-hover);
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+.rutina__titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin: 0.2rem 0 0 0;
+}
+
+.rutina__badge-dias {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border-light);
+    color: var(--color-muted);
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+/* Grid de Tarjetas */
+.rutina__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* Tarjeta individual */
+.ejercicio__card {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border-light);
+    border-radius: 10px;               /* Un borde un poco más sutil */
+    padding: 0.8rem 1rem;              /* Reducido de 1.2rem 1.4rem */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ejercicio__card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.ejercicio__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.2rem;
+}
+
+.ejercicio__nombre {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.ejercicio__info-icon {
+    color: var(--color-primary-hover);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Detalles */
+.ejercicio__detalles {
+    border-top: 1px solid var(--color-border-light);
+    padding-top: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.ejercicio__fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.ejercicio__label {
+    color: var(--color-muted);
+}
+
+.ejercicio__valor {
+    font-weight: 700;
+    color: var(--color-title);
+}
+
+/* Botón Completado */
+.ejercicio__btn-completado {
+    width: 100%;
+    background-color: var(--color-primary-soft);
+    color: var(--color-primary-hover);
+    border: 1px solid var(--color-primary-hover);
+    border-radius: 8px;
+    padding: 0.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ejercicio__btn-completado:hover {
+    background-color: var(--color-primary-hover);
+    color: #ffffff;
+    box-shadow: 0 4px 10px var(--color-success-glow);
+}
+
+
+
+.home__usuario-enlace{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+.completado_content-4{
+   width: 100%;
+    max-width: 630px;          /* Limita el ancho al tamaño real del wireframe */
+    margin: 3rem auto 1rem;     /* Reemplaza margin-right por auto para centrar horizontalmente */
+    /* Espaciado interno compacto */
+    padding: 2.5rem 2rem;
+    /* Bordes y sombras */
+    background-color: var(--color-bg-card);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.completado_icon-4{
+    font-size: 6rem;
+    color: var(--color-primary-hover);
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px 4px var(--color-success-glow);
+}
+
+.completado__button-4{
+    width: 95%;
+    margin-top: 3rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid var(--color-bg-card);
+    color: var(--color-bg-card);
+    background-color: var(--color-primary-hover);
+    border-radius: 0.5rem;
+    margin-top: 7rem;
+}
+
+.completado_icon-button-4{
+    position: relative;
+    text-align: right;
+    margin-top: -2.7rem;
+    margin-right: 13.5rem;       /* Distancia desde el borde derecho */
+    margin-bottom: 1.2rem;
+    pointer-events: none;
+    font-size: 1rem;
+}
+
+.icon_button-4{
+    color: var(--color-bg-card);
+}
+
+
+
+.completado-text_parrafo-4{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Detalle de ejercicio*/
+
+body.ejercicio-detalle {
+    overflow-y: auto;
+}
+
+/* Contenedor General */
+.ejercicio-detalle__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--color-bg-main);
+}
+
+/* Header con Gradiente e Imagen */
+.ejercicio-detalle__header {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid var(--color-border);
+    margin-top: 2rem;
+}
+
+
+
+
+
+.ejercicio-detalle__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, var(--color-bg-main) 100%);
+}
+
+.ejercicio-detalle__title-wrapper {
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+    background-color: var(--color-bg-main);
+}
+
+.ejercicio-detalle__titulo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+/* Layout Principal de Tarjetas */
+.ejercicio-detalle__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.2rem;
+    align-items: start;
+}
+
+/* Estilo Base de las Tarjetas */
+.card-info {
+    position: relative;
+    background-color: var(--color-bg-card);
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--color-border-light);
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.card-info-1{
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+}
+
+/* 2. Segunda caja (Máquina): Se ubica arriba en la columna derecha */
+.card-info-2{
+    grid-column: 2 / 2;
+    grid-row: 1;
+}
+
+/* 3. Tercera caja (Video Tutorial): Se ubica abajo de Máquina en la columna derecha */
+.card-info-3{
+    grid-column: 2 / 2;
+    grid-row: 2;
+}
+
+/* Indicador lateral verde */
+.card-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--color-primary-hover);
+}
+
+/* Encabezados de Tarjetas */
+.card-info__header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.card-info__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--color-primary-soft);
+}
+
+.card-info__icon {
+    font-size: 0.95rem;
+    color: var(--color-primary-hover);
+}
+
+.card-info__titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+/* Párrafos y Listas */
+.card-info__texto {
+    font-size: 0.85rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.card-info__lista {
+    padding-left: 1.2rem;
+    font-size: 0.82rem;
+    color: var(--color-text);
+    margin-bottom: 0.6rem
+}
+
+.card-info__lista li {
+    margin-bottom: 0.6rem;
+    line-height: 1.35;
+}
+
+
+
+
+
+
+/*Progreso*/
+
+
+
+/* Encabezado */
+.progreso__header {
+    margin-bottom: 2rem;
+}
+
+.progreso__titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.2rem;
+}
+
+.progreso__meta {
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.progreso__meta-icon {
+    font-size: 0.85rem;
+}
+
+/* Métricas (Peso y Grasa) */
+.progreso__metricas {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 9rem;
+    margin-bottom: 2.5rem;
+}
+
+.metrica-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.metrica-card__label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-muted);
+    letter-spacing: 0.5px;
+}
+
+.metrica-card__valor-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+}
+
+.metrica-card__valor {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.metrica-card__valor--peso {
+    color: var(--color-primary-hover);
+}
+
+.metrica-card__valor--grasa {
+    color: var(--color-primary);
+}
+
+.metrica-card__cambio {
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.metrica-card__cambio--peso {
+    color: var(--color-primary-hover);
+}
+
+.metrica-card__cambio--grasa {
+    color: var(--color-grasa);
+}
+
+/* Notas de Desempeño */
+.progreso__subtitulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-bottom: 1.2rem;
+}
+
+.nota-card {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border-light);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.nota-card__texto {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    padding-bottom: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.nota-card__footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-muted);
+    font-size: 0.82rem;
+}
+
+
+
+
+
+.home__content-2{
+    grid-area: content;
+    background-color: var(--color-bg-main);
+    width: 100%;
+    max-width: calc(100% - 5rem);
+    overflow-y: auto; 
+    height: 100vh;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}

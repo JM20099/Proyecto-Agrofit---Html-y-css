@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="asseds/css/agrofit.css">
+  <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+  <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+  <link rel="stylesheet" href="asseds/css/reset.css">
+  <title>Agrofit - Editar Progreso</title>
+</head>
+<body class="progreso__body">
+
+     <a href="progreso.html">
+        <div class="rutina-hoy__volver">
+            <button type="button" class="rutina-volver__btn-add">
+                <i class="icon__volver fa-solid fa-arrow-left"></i> Volver
+            </button>
+        </div>
+        </a>
+
+
+  <!-- Contenido Principal -->
+  <section class="progreso__container">
+     
+    <div class="progreso__header">
+      <h1 class="progreso__titulo">Editar Progreso</h1>
+      <p class="progreso__subtitulo">
+        Actualiza las métricas y notas de desempeño para mantener un seguimiento preciso de su evolución.
+      </p>
+    </div>
+
+    <!-- Layout de dos columnas -->
+    <div class="progreso__grid">
+      
+      <!-- Columna Izquierda: Formulario -->
+      <div class="progreso__col-left">
+        
+        <!-- Tarjeta del usuario -->
+        <div class="progreso__card usuario__resumen">
+          <div class="usuario__avatar-box">CM</div>
+          <div class="usuario__meta">
+            <h3 class="usuario__nombre-resumen">Carlos Mendoza</h3>
+            <span class="usuario__doc">Doc: 00000</span>
+          </div>
+          <div class="usuario__plan-tag">
+            <span class="plan__label">PLAN</span>
+            <span class="plan__badge">Activo</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta del Formulario de Nuevas Métricas -->
+        <div class="progreso__card form__metricas">
+          <h2 class="form__sec-title">Nuevas Métricas</h2>
+          
+          <form class="metricas__form">
+            <div class="inputs__row">
+              <div class="input__box">
+                <label class="input__label">PESO CORPORAL (KG)</label>
+                <div class="input__wrapper">
+                  <input type="number" step="0.1" placeholder="0,0" class="input__field">
+                  <span class="input__unit">kg</span>
+                </div>
+              </div>
+
+              <div class="input__box">
+                <label class="input__label">GRASA CORPORAL (%)</label>
+                <div class="input__wrapper">
+                  <input type="number" step="0.1" placeholder="0,0" class="input__field">
+                  <span class="input__unit">%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="input__box textarea__box">
+              <label class="input__label">NOTAS DE DESEMPEÑO</label>
+              <textarea class="textarea__field" placeholder="Observaciones sobre técnica, fatiga, mejoras..."></textarea>
+            </div>
+
+            <a href="progreso.html">
+            <button type="button" class="btn__guardar-progreso">
+              <i class="fa-solid fa-floppy-disk"></i>
+              <span>Registrar Progreso del Alumno</span>
+            </button>
+            </a>
+
+          
+          </form>
+        </div>
+      </div>
+
+      <!-- Columna Derecha: Historial Reciente -->
+      <div class="progreso__col-right">
+        <div class="progreso__card historial__card">
+          <h2 class="historial__title">
+            <i class="fa-solid fa-rotate-left"></i> Historial Reciente
+          </h2>
+
+          <!-- Registro Histórico 1 -->
+          <div class="historial__item">
+            <div class="item__header">
+              <span class="item__fecha">12 OCT 2023</span>
+              <i class="fa-solid fa-chart-line icon--up"></i>
+            </div>
+            <div class="item__stats">
+              <div class="stat__box">
+                <span class="stat__label">Peso</span>
+                <span class="stat__val">78.5 <span>kg</span></span>
+              </div>
+              <div class="stat__box">
+                <span class="stat__label">Grasa</span>
+                <span class="stat__val">14.2%</span>
+              </div>
+            </div>
+            <p class="item__notas">Aumento de fuerza notable en sentadilla. Mantener volumen actual.</p>
+          </div>
+
+          <!-- Registro Histórico 2 -->
+          <div class="historial__item">
+            <div class="item__header">
+              <span class="item__fecha">05 OCT 2023</span>
+            </div>
+            <div class="item__stats">
+              <div class="stat__box">
+                <span class="stat__label">Peso</span>
+                <span class="stat__val">78.2 <span>kg</span></span>
+              </div>
+              <div class="stat__box">
+                <span class="stat__label">Grasa</span>
+                <span class="stat__val">14.5%</span>
+              </div>
+            </div>
+            <p class="item__notas">Leve fatiga reportada. Se ajustó descanso entre series.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

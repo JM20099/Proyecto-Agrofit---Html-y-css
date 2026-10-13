@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asseds/css/usuarios.css">
+    <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="asseds/css/reset.css">
+    <link rel="stylesheet" href="asseds/css/responsive.css">
+    <title>Agrofit</title>
+</head>
+<body>
+    <div class="layout__inicio">
+        <aside class="home__aside">
+            <section class="home__container">
+                <nav class="layout__menu"> <!--menu de navegacion--> <!--nav sirve para colocar enlaces de navegacion-->
+                    <div class="home__icon-text">
+                        <img class="home__img" src="asseds/img/logo_2.png" alt="">
+                    </div>
+
+
+                    <input type="checkbox" id="menu-toggle" class="menu__checkbox">
+                <label for="menu-toggle" class="menu__btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                    
+                
+                    <ul class="menu__list"> <!--tabla informal-->
+                        <li class="menu__option  "> <!--datos de la tabla-->
+                            <a href="home.html" class="menu_link menu__link--active"> <!--crea conexiones-->
+                                <i class="menu__icon fa-solid fa-house"></i> <!--mostrar iconos-->
+                                <span class="menu__overlay">Inicio</span> <!--coloca texto al lado del icono-->
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="progreso_usuario.html" class="menu_link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Progreso</span>
+                            </a>
+                        <li class="menu__option-cerrar">
+                            <a href="inicio_de_sesion.html" class="menu_link-cerrar">
+                                <i class="menu__icon fa-solid fa-right-from-bracket"></i>
+                                <span class="menu__overlay">Cerrar Sesión</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </section>
+        </aside>
+
+
+        <main class="home__content">
+            <header class="rutina__header">
+            <div class="rutina__header-info">
+                <span class="rutina__subtitulo">Mi Rutina</span>
+                <h1 class="rutina__titulo">Fuerza Tren Superior</h1>
+            </div>
+            <div class="rutina__badge-dias">
+                <i class="fa-regular fa-clock"></i> 45 días
+            </div>
+        </header>
+
+        <!-- Grilla de Ejercicios -->
+        <section class="rutina__grid">
+
+            <!-- Tarjeta 1 -->
+            <article class="ejercicio__card">
+                <div class="ejercicio__header">
+                    <h3 class="ejercicio__nombre">Press de Banca Plano</h3>
+                    <a href="detalle_ejercicio.html">
+                    <i class="ejercicio__info-icon fa-solid fa-info-circle"></i>
+                    </a>
+                </div>
+                <div class="ejercicio__detalles">
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Series</span>
+                        <span class="ejercicio__valor">4</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Repeticiones</span>
+                        <span class="ejercicio__valor">8 - 10</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Descanso</span>
+                        <span class="ejercicio__valor">90s</span>
+                    </div>
+                </div>
+                
+                <button type="button" class="ejercicio__btn-completado">
+                    <i class="fa-solid fa-circle-check"></i> Ejercicio completado
+                </button>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="ejercicio__card">
+                <div class="ejercicio__header">
+                    <h3 class="ejercicio__nombre">Dominadas Supinas</h3>
+                    <i class="ejercicio__info-icon fa-solid fa-circle-info"></i>
+                </div>
+                <div class="ejercicio__detalles">
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Series</span>
+                        <span class="ejercicio__valor">3</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Repeticiones</span>
+                        <span class="ejercicio__valor">12 - 14</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Descanso</span>
+                        <span class="ejercicio__valor">90s</span>
+                    </div>
+                </div>
+                <button type="button" class="ejercicio__btn-completado">
+                    <i class="fa-solid fa-circle-check"></i> Ejercicio completado
+                </button>
+            </article>
+
+            <!-- Tarjeta 3 -->
+            <article class="ejercicio__card">
+                <div class="ejercicio__header">
+                    <h3 class="ejercicio__nombre">Press Militar c/Mancuernas</h3>
+                    <i class="ejercicio__info-icon fa-solid fa-circle-info"></i>
+                </div>
+                <div class="ejercicio__detalles">
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Series</span>
+                        <span class="ejercicio__valor">4</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Repeticiones</span>
+                        <span class="ejercicio__valor">10 - 12</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Descanso</span>
+                        <span class="ejercicio__valor">90s</span>
+                    </div>
+                </div>
+                <button type="button" class="ejercicio__btn-completado">
+                    <i class="fa-solid fa-circle-check"></i> Ejercicio completado
+                </button>
+            </article>
+
+            <!-- Tarjeta 4 -->
+            <article class="ejercicio__card">
+                <div class="ejercicio__header">
+                    <h3 class="ejercicio__nombre">Remo en Polea Baja</h3>
+                    <i class="ejercicio__info-icon fa-solid fa-circle-info"></i>
+                </div>
+                <div class="ejercicio__detalles">
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Series</span>
+                        <span class="ejercicio__valor">3</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Repeticiones</span>
+                        <span class="ejercicio__valor">12 - 15</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Descanso</span>
+                        <span class="ejercicio__valor">90s</span>
+                    </div>
+                </div>
+                <button type="button" class="ejercicio__btn-completado">
+                    <i class="fa-solid fa-circle-check"></i> Ejercicio completado
+                </button>
+            </article>
+
+            <!-- Tarjeta 5 -->
+            <article class="ejercicio__card">
+                <div class="ejercicio__header">
+                    <h3 class="ejercicio__nombre">Elevaciones Laterales</h3>
+                    <i class="ejercicio__info-icon fa-solid fa-circle-info"></i>
+                </div>
+                <div class="ejercicio__detalles">
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Series</span>
+                        <span class="ejercicio__valor">4</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Repeticiones</span>
+                        <span class="ejercicio__valor">15</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Descanso</span>
+                        <span class="ejercicio__valor">90s</span>
+                    </div>
+                </div>
+                <button type="button" class="ejercicio__btn-completado">
+                    <i class="fa-solid fa-circle-check"></i> Ejercicio completado
+                </button>
+            </article>
+
+            <!-- Tarjeta 6 -->
+            <article class="ejercicio__card">
+                <div class="ejercicio__header">
+                    <h3 class="ejercicio__nombre">Curl de Bíceps Alterno</h3>
+                    <i class="ejercicio__info-icon fa-solid fa-circle-info"></i>
+                </div>
+                <div class="ejercicio__detalles">
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Series</span>
+                        <span class="ejercicio__valor">3</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Repeticiones</span>
+                        <span class="ejercicio__valor">12 por brazo</span>
+                    </div>
+                    <div class="ejercicio__fila">
+                        <span class="ejercicio__label">Descanso</span>
+                        <span class="ejercicio__valor">90s</span>
+                    </div>
+                </div>
+                <a class="home__usuario-enlace" href="rutina_completada.html">
+                <button type="button" class="ejercicio__btn-completado">
+                    <i class="fa-solid fa-circle-check"></i> Ejercicio completado
+                </button>
+                </a>
+            </article>
+
+        </section>
+
+    </main>
+            
+            
+    </div>
+</body>
+</html>

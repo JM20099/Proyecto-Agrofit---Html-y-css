@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asseds/css/usuarios.css">
+    <link rel="stylesheet" href="asseds/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="asseds/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="asseds/css/reset.css">
+    <link rel="stylesheet" href="asseds/css/responsive.css">
+    <title>Agrofit</title>
+</head>
+<body>
+    <div class="layout__inicio">
+        <aside class="home__aside">
+            <section class="home__container">
+                <nav class="layout__menu"> <!--menu de navegacion--> <!--nav sirve para colocar enlaces de navegacion-->
+                    <div class="home__icon-text">
+                        <img class="home__img" src="asseds/img/logo_2.png" alt="">
+                    </div>
+
+
+                     <input type="checkbox" id="menu-toggle" class="menu__checkbox">
+                <label for="menu-toggle" class="menu__btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                    
+                    <ul class="menu__list"> <!--tabla informal-->
+                        <li class="menu__option  "> <!--datos de la tabla-->
+                            <a href="home_usuario.html" class="menu_link"> <!--crea conexiones-->
+                                <i class="menu__icon fa-solid fa-house"></i> <!--mostrar iconos-->
+                                <span class="menu__overlay">Inicio</span> <!--coloca texto al lado del icono-->
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="progreso_usuario.html" class="menu_link menu__link--active">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Progreso</span>
+                            </a>
+                        <li class="menu__option-cerrar">
+                            <a href="inicio_de_sesion.html" class="menu_link-cerrar">
+                                <i class="menu__icon fa-solid fa-right-from-bracket"></i>
+                                <span class="menu__overlay">Cerrar Sesión</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </section>
+        </aside>
+
+
+        <main class="home__content-2">
+            <div class="progreso_informacion">
+        <!-- Encabezado de la Sección -->
+        <header class="progreso__header">
+            <h1 class="progreso__titulo">Mi Progreso</h1>
+            <p class="progreso__meta">
+                <i class="fa-regular fa-calendar progreso__meta-icon"></i>
+                Última Actualización: 15 Oct 2026
+            </p>
+        </header>
+
+        <!-- Bloque de Métricas (Peso y Grasa) -->
+        <section class="progreso__metricas">
+            <div class="metrica-card">
+                <span class="metrica-card__label">PESO CORPORAL (KG)</span>
+                <div class="metrica-card__valor-wrapper">
+                    <span class="metrica-card__valor metrica-card__valor--peso">78.5</span>
+                    <span class="metrica-card__cambio metrica-card__cambio--peso">
+                        <i class="fa-solid fa-arrow-down"></i> 1.2
+                    </span>
+                </div>
+            </div>
+
+            <div class="metrica-card">
+                <span class="metrica-card__label">GRASA CORPORAL (%)</span>
+                <div class="metrica-card__valor-wrapper">
+                    <span class="metrica-card__valor metrica-card__valor--grasa">16.4</span>
+                    <span class="metrica-card__cambio metrica-card__cambio--grasa">
+                        <i class="fa-solid fa-arrow-down"></i> 0.8
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Notas de Desempeño -->
+        <section class="progreso__notas">
+            <h2 class="progreso__subtitulo">Notas de Desempeño</h2>
+
+            <div class="nota-card">
+                <p class="nota-card__texto">
+                    Excelente progreso en la reducción de porcentaje de grasa corporal manteniendo la masa muscular. Se recomienda aumentar la ingesta de agua durante los entrenamientos de alta intensidad. La técnica en los levantamientos compuestos ha mejorado significativamente desde la última evaluación.
+                </p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
+    </div>
+</body>
+</html>
